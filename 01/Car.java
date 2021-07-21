@@ -154,11 +154,11 @@ public class Car {
     Car panamera = new Car("panamera", 2021, "firebrick");
     System.out.println(panamera.Info());
     System.out.println("");
-    int sec = 4;
     colt.StartEngine();
     corola.StartEngine();
     supra.StartEngine();
     panamera.StartEngine();
+    int sec = 4;
     System.out.println(colt.Model() + " drived " + colt.Drive(sec) + " meters in " + sec + " seconds");
     System.out.println(corola.Model() + " drived " + corola.Drive(sec) + " meters in " + sec + " seconds");
     System.out.println(supra.Model() + " drived " + supra.Drive(sec) + " meters in " + sec + " seconds");
