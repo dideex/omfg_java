@@ -12,7 +12,6 @@ public class Car {
   private double wheelBase;
   private boolean engineStarted;
 
-  // 0,73549875
   public Car(String model, int year, String color) {
     switch (model) {
       case "colt":
