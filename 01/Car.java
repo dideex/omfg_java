@@ -56,7 +56,7 @@ public class Car {
   }
 
   public String Info() {
-    return "Car: " + this.Model() + "\nColor: " + this.Year() + "\nYear: " + this.Color() + "\nAverage price: " + this.Price()
+    return "Car: " + this.Model() + "\nYear: " + this.Year() + "\nColor: " + this.Color() + "\nAverage price: " + this.Price()
         + "\nPower in wats: " + this.Power()+ "\nPower in HP: " + this.PowerInHorses() + "\nAcceleration: " + this.Acceleration() + "\nTop: " + this.TopSPeed() + "\nHeight: "
         + this.Height() + "\nWidth: " + this.Width() + "\nLength: " + this.Length() + "\nWheelbase: " + this.WheelBase();
   }
@@ -82,7 +82,7 @@ public class Car {
   }
 
   public String Year() {
-    return String.valueOf(this.year) + " year";
+    return String.valueOf(this.year);
   }
 
   public String Color() {
@@ -145,23 +145,28 @@ public class Car {
     Car colt = new Car("colt", 2005, "green");
     System.out.println(colt.Info());
     System.out.println("");
+
     Car corola = new Car("corola", 2018, "blue");
     System.out.println(corola.Info());
     System.out.println("");
+
     Car supra = new Car("supra", 2020, "yellow");
     System.out.println(supra.Info());
     System.out.println("");
+
     Car panamera = new Car("panamera", 2021, "firebrick");
     System.out.println(panamera.Info());
     System.out.println("");
+
     colt.StartEngine();
     corola.StartEngine();
     supra.StartEngine();
     panamera.StartEngine();
+
     int sec = 4;
-    System.out.println(colt.Model() + " drived " + colt.Drive(sec) + " meters in " + sec + " seconds");
-    System.out.println(corola.Model() + " drived " + corola.Drive(sec) + " meters in " + sec + " seconds");
-    System.out.println(supra.Model() + " drived " + supra.Drive(sec) + " meters in " + sec + " seconds");
-    System.out.println(panamera.Model() + " drived " + panamera.Drive(sec) + " meters in " + sec + " seconds");
+    System.out.println(colt.Model() + " has driven " + colt.Drive(sec) + " meters in " + sec + " seconds");
+    System.out.println(corola.Model() + " has driven " + corola.Drive(sec) + " meters in " + sec + " seconds");
+    System.out.println(supra.Model() + " has driven " + supra.Drive(sec) + " meters in " + sec + " seconds");
+    System.out.println(panamera.Model() + " has driven " + panamera.Drive(sec) + " meters in " + sec + " seconds");
   }
 }
