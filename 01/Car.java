@@ -17,12 +17,15 @@ public class Car {
       case "colt":
         Init("colt", year, color, 290000.0, 70.0, 11.1, 180.0, 1550.0, 1695.0, 3870.0, 2500.0);
         break;
+
       case "corola":
         Init("corola", year, color, 1950000.0, 82.3, 10.8, 185.0, 1435.0, 1780.0, 4630.0, 2700.0);
         break;
+
       case "supra":
         Init("supra", year, color, 5950000.0, 251.0, 4.3, 250.0, 1292.0, 1854.0, 4379.0, 2470.0);
         break;
+
       case "panamera":
         Init("panamera", year, color, 16150000.0, 353.0, 3.9, 300.0, 1423.0, 1937.0, 5049.0, 2950.0);
         break;
@@ -56,9 +59,10 @@ public class Car {
   }
 
   public String Info() {
-    return "Car: " + this.Model() + "\nYear: " + this.Year() + "\nColor: " + this.Color() + "\nAverage price: " + this.Price()
-        + "\nPower in wats: " + this.Power()+ "\nPower in HP: " + this.PowerInHorses() + "\nAcceleration: " + this.Acceleration() + "\nTop: " + this.TopSPeed() + "\nHeight: "
-        + this.Height() + "\nWidth: " + this.Width() + "\nLength: " + this.Length() + "\nWheelbase: " + this.WheelBase();
+    return "Car: " + this.Model() + "\nYear: " + this.Year() + "\nColor: " + this.Color() + "\nAverage price: "
+        + this.Price() + "\nPower in wats: " + this.Power() + "\nPower in HP: " + this.PowerInHorses()
+        + "\nAcceleration: " + this.Acceleration() + "\nTop: " + this.TopSPeed() + "\nHeight: " + this.Height()
+        + "\nWidth: " + this.Width() + "\nLength: " + this.Length() + "\nWheelbase: " + this.WheelBase();
   }
 
   // ------------------------------
