@@ -129,6 +129,10 @@ public class Car {
     return String.valueOf(this.wheelBase) + " mm";
   }
 
+  // ------------------------------
+  // Constructor
+  // ------------------------------
+
   public void Init(String model, int year, String color, double price, double power, double acceleration,
       double topSpeed, double height, double width, double length, double wheelBase) {
     this.model = model;
